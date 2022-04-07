@@ -44,7 +44,7 @@ describe("Create Statement", () => {
     }).rejects.toBeInstanceOf(CreateStatementError.UserNotFound);
   });
 
-  it("should not be able to create a new statement if fund are insuficient", async () => {
+  it("should not be able to create a new statement if funds are insuficient", async () => {
     expect(async () => {
       const user = await inMemoryUsersRepository.create({
         name: 'user',
